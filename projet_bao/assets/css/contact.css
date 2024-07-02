@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+a { 
+    text-decoration: none;
+}
+
+nav {
+    background-color: #ffffffe0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(../images/Corporate-logo-400_200px-4648879c.png);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: rob-medium;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #686868;
+    font-size: 15px;
+}
+
+nav ul li:hover, nav ul li:active {
+    text-decoration: none;
+    color: #366477;
+    border-bottom: 1px solid #a4aaad71;
+}
+
+.container{
+    background-color: #475C6C;
+    color: white;
+}
+.container1 {
+    /* margin: 20px; */
+    padding: 30px;
+    text-align: center;
+}
+.container2 {
+    background-color: black;
+    padding: 30px;
+    height: 170vh;
+}
+.container3 {
+    margin: 10px;
+    
+}
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 50px;
+} 
+p{
+    font-size: 20px;
+    color: white;
+}
+.img1 {
+    background-image: url(../images/Bastion_homepage-cover1200x1200v2-45f76a79-52e792f2.jpeg);
+    height: 100%;
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+}
+.img2 {
+    background-image: url(../images/London_homepage-cover_v2-d5e2e994-fff2d4ed.jpeg);
+    height: 100%;
+    background-size: cover;
+    border-radius: 5px;
+}
+button{
+    background-color: #475C6C;
+    color: white;
+    border-bottom: #475C6C;
+    border-radius: 5px;
+    padding: 15px;
+}
+.container5{
+    background-color: #18384E;
+}
+.but {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
