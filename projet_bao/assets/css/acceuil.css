@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: rob-regular;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: rob-medium;
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: gar-medium;
+    src: url(../fonts/garamont/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: gar-regular;
+    src: url(../fonts/garamont/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: gar-light;
+    src: url(../fonts/garamont/CormorantGaramond-Light.ttf);
+}
+
+body {
+    background-color: #222222;
+    font-family: rob-regular;
+}
+
+nav {
+    background-color: #ffffffe0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(../images/Corporate-logo-400_200px-4648879c.png);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: rob-medium;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #686868;
+    font-size: 15px;
+}
+
+nav ul li:hover, nav ul li:active {
+    text-decoration: none;
+    color: #366477;
+    border-bottom: 1px solid #a4aaad71;
+}
+
+.dis_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_div {
+    width: 55%;
+    height: 250px;
+    background-color: #121212;
+    margin-top: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_div h4 {
+    border-bottom: 2px solid #6969696b;
+    font-size: 35px;
+    font-family: gar-light;
+    width: 80%;
+    text-align: center;
+    text-shadow: 4px 4px #000;
+    padding-bottom: 10px;
+    /* text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); */
+}
+
+/* --------------------------------------------------- */
+
+
+/* .d_grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.zone1 img {
+    width: 40%;
+    height: 425px;
+    border-radius: 10px;
+}
+
+.zone1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+    display: flex;
+}
+
+.zone1 div p {
+    color: #808080;
+}
+
+.zone1 button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #c7c7c7;
+    color: #fff;
+    background-color: #366477;
+    border-radius: 10px;
+}
+
+.zone1 button:hover {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #c7c7c7;
+    color: #fff;
+    background-color: #D5B853;
+} */
+
+/* --------------------------------------------------- */
