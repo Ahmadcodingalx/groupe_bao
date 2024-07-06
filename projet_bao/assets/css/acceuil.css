@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: rob-thin;
+    src: url(../fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
     font-family: rob-medium;
     src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
@@ -26,6 +31,11 @@
 @font-face {
     font-family: gar-light;
     src: url(../fonts/garamont/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+    font-family: gar-bold;
+    src: url(../fonts/garamont/CormorantGaramond-Bold.ttf);
 }
 
 body {
@@ -54,6 +64,7 @@ nav ul {
     align-items: center;
     gap: 20px;
     font-family: rob-medium;
+    padding: 0 20px;
 }
 
 nav ul li a {
@@ -75,7 +86,7 @@ nav ul li:hover, nav ul li:active {
 }
 
 .header_div {
-    width: 55%;
+    width: 60%;
     height: 250px;
     background-color: #121212;
     margin-top: 100px;
@@ -84,17 +95,148 @@ nav ul li:hover, nav ul li:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 .header_div h4 {
     border-bottom: 2px solid #6969696b;
-    font-size: 35px;
+    font-size: 45px;
     font-family: gar-light;
     width: 80%;
     text-align: center;
     text-shadow: 4px 4px #000;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     /* text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); */
+}
+
+.header_div p {
+    font-size: 20px;
+    font-family: rob-medium;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.read_button {
+    border-radius: 3px;
+    background-color: #18384E;
+    /* border: 0.1px solid #fff; */
+    /* border: none; */
+    padding: 15px 20px;
+    font-family: rob-regular;
+    font-size: 14px;
+    
+}
+
+.d_grid_2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    padding-left: 50px;
+}
+
+.d_grid_2 .d_grid_2_text h5 {
+    font-size: 42px;
+    font-family: gar-light;
+    width: 80%;
+    text-align: left;
+    color: #DFB512;
+}
+
+.d_grid_2 .d_grid_2_text p {
+    font-size: 16px;
+    font-family: rob-regular;
+    width: 90%;
+    text-align: left;
+    color: #DFB512;
+    text-align: justify;
+    
+}
+
+.d_grid_2 .d_grid_2_text hr {
+    margin: 25px 0  20px 0;
+    width: 25%;
+}
+
+.d_grid_2 img {
+    /* aspect-ratio: 1:1; */
+    height: 380px;
+    width: 400px;
+}
+
+.d_grid_2 .d_grid_2_text p span {
+    font-size: 42px;
+    font-family: gar-light;
+    position: relative;
+    top: 12px;
+}
+
+.blue_big_div {
+    background-color: #1d3b47;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.blue_big_div h6 {
+    color: #DFB512;
+    text-align: center;
+    font-family: rob-thin;
+    font-size: 35px;
+}
+
+.d_grid_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    border-top: 5px solid #ddd;
+    width: 95%;
+    padding-top: 25px;
+    color: #fff;
+}
+
+.d_grid_3 div .image_1 {
+    background-image: url(../images/coworking-office-team-standing-and-discussing-diag-STNRXWM-31fddf41.jpeg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.d_grid_3 div .p1 {
+    font-family: gar-light;
+    font-size: 25px;
+    text-align: center;
+}
+
+.d_grid_3 div .p2 {
+    font-family: rob-light;
+    font-size: 18px;
+    text-align: justify;
+    color: #ddd;
+}
+
+.lien {
+    color: rgb(37, 37, 160);
+    cursor: wait;
+}
+
+.d_grid_3 div .image_1:hover {
+    background-size: 480px 480px;
+    background-position: center;
+    transition-duration: 1000ms;
+}
+
+.zone1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 /* --------------------------------------------------- */
