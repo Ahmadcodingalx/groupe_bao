@@ -51,6 +51,7 @@ nav {
     list-style: none;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .logo {
@@ -79,7 +80,7 @@ nav ul li:hover, nav ul li:active {
     border-bottom: 1px solid #a4aaad71;
 }
 
-.dis_center {
+.div_center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,12 +121,22 @@ nav ul li:hover, nav ul li:active {
 .read_button {
     border-radius: 3px;
     background-color: #18384E;
-    /* border: 0.1px solid #fff; */
-    /* border: none; */
-    padding: 15px 20px;
+    border: 1px solid #fff;
+    color: #fff;
     font-family: rob-regular;
     font-size: 14px;
-    
+    width: auto;
+    height: 45px;
+    padding: 0 20px 0 20px;
+}
+
+.read_button:hover {
+    background-color: #DFB512;
+    color: #000;
+}
+
+.zone_1 .read_button {
+    margin-left: 150px;
 }
 
 .d_grid_2 {
@@ -135,7 +146,7 @@ nav ul li:hover, nav ul li:active {
     padding-left: 50px;
 }
 
-.d_grid_2 .d_grid_2_text h5 {
+.d_grid_2 .d_grid_2_text h5, .blue_big_div .grid_a .txt_a .sp1 {
     font-size: 42px;
     font-family: gar-light;
     width: 80%;
@@ -174,7 +185,8 @@ nav ul li:hover, nav ul li:active {
 .blue_big_div {
     background-color: #1d3b47;
     width: 100%;
-    height: 1100px;
+    height: auto;
+    padding: 75px 0 75px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,8 +211,7 @@ nav ul li:hover, nav ul li:active {
     color: #fff;
 }
 
-.d_grid_3 div .image_1 {
-    background-image: url(../images/coworking-office-team-standing-and-discussing-diag-STNRXWM-31fddf41.jpeg);
+.d_grid_3 .zone_1 .image_1, .d_grid_3 .zone_1 .image_2, .d_grid_3 .zone_1 .image_3 {
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -208,17 +219,31 @@ nav ul li:hover, nav ul li:active {
     border-radius: 10px;
 }
 
-.d_grid_3 div .p1 {
+.d_grid_3 .zone_1 .image_1 {
+    background-image: url(../images/coworking-office-team-standing-and-discussing-diag-STNRXWM-31fddf41.jpeg);
+}
+
+.d_grid_3 .zone_1 .image_2 {
+    background-image: url(../images/close-up-of-industrial-bricklayer-installing-brick-P99HVE8-4f9f6a5a.jpeg);
+}
+
+.d_grid_3 .zone_1 .image_3 {
+    background-image: url(../images/signing-legal-document-PSE9PFT-068b3093.jpeg);
+}
+
+.d_grid_3 .zone_1 .p1 {
     font-family: gar-light;
     font-size: 25px;
     text-align: center;
+    margin: 20px 0 20px 0;
 }
 
-.d_grid_3 div .p2 {
-    font-family: rob-light;
-    font-size: 18px;
+.d_grid_3 .zone_1 .p2 {
+    font-family: rob-regular;
+    font-size: 16px;
     text-align: justify;
     color: #ddd;
+    margin-bottom: 20px;
 }
 
 .lien {
@@ -226,7 +251,7 @@ nav ul li:hover, nav ul li:active {
     cursor: wait;
 }
 
-.d_grid_3 div .image_1:hover {
+.d_grid_3 .zone_1 .image_1:hover, .d_grid_3 .zone_1 .image_2:hover, .d_grid_3 .zone_1 .image_3:hover {
     background-size: 480px 480px;
     background-position: center;
     transition-duration: 1000ms;
@@ -236,7 +261,173 @@ nav ul li:hover, nav ul li:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+}
+
+.mini_grid {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    margin: 50px 90px;
+    color: #ddd;
+}
+
+.mini_grid div h6 {
+    font-family: gar-light;
+    font-size: 65px;
+    color: #3b3939;
+}
+
+.grid_a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    color: #ddd;
+    margin: 0 45px;
+    column-gap: 40px;
+}
+
+.grid_b {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    color: #ddd;
+    column-gap: 40px;
+    height: auto;
+    width: 80%;
+}
+
+.center {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 60px 35px 10px 0;
+}
+
+.blue_big_div .grid_a .txt_a .sp1 {
+    text-shadow: 4px 4px #000;
+}
+
+.blue_big_div .grid_a .txt_a .sp2 {
+    color: #DFB512;
+    font-size: 25px;
+    font-family: rob-regular;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/Capture.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_ {
+    display: flex;
+    font-family: rob-regular;
+    gap: 12px;
+    border-left: 5px solid #686868;
+    padding-left: 100px;
+}
+
+.form_ .email_input{
+    background-color: #222222;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #91919148;
+    font-size: 18px;
+    color: #c0c0c0;
+    outline: none;
+}
+
+.form_ .email_input:hover, .form_ .email_input:active{
+    outline: none;
+}
+
+.form_ .btn_input{
+    width: 120px;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 1px solid #fff;
+}
+
+.form_ .btn_input:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.text_a1 {
+    font-family: rob-regular;
+    text-align: right;
+}
+
+.text_a1 span {
+    font-size: 50px;
+}
+
+.img6 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 80px;
+    background-color: #424242;
+}
+
+.img6 img {
+    width: 160px;
+    height: 80px;
+}
+
+.foot_div1 {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    column-gap: 145px;
+    border-bottom: 5px solid #91919148;
+    color: #ddd;
+    width: 80%;
+    padding: 0 0 110px 100px;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+svg, video {
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(81, 81, 241);
+}
+
+.foot_div1 div p {
+    border-bottom: 5px solid #91919148;
+    font-family: gar-medium;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.foot_div2 {
+    text-align: center;
+    color: #ddd;
+}
+
+i {
+    border-bottom: 2px solid #91919148;
+    padding-bottom: 6px;
+    font-size: 18px;
+    color: #fff;
+}
+
+i:hover {
+    color: #ffffff57;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------- */
